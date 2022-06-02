@@ -6,6 +6,17 @@ function resolve(dir) {
 
 module.exports = {
     publicPath: '/answer-app',
+    devServer: {
+        proxy: {
+            '/dev-api': {
+                target: 'http://api.hdblog.online',
+                changeOrigin: true,
+                pathRewrite: {
+                    '^/dev-api': ''
+                }
+            }
+        }
+    },
     chainWebpack: config => {
         // 配置别名
         config.resolve.alias

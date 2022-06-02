@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import { getAnswerResult } from '@/api'
 import { mapGetters } from 'vuex'
+import { getAnswerResult } from '@/apis/answerResult'
 
 export default {
 	name: 'AnswerResult',

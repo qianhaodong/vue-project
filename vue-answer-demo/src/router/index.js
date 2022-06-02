@@ -22,6 +22,12 @@ const routes = [
 		name: 'AnswerResult',
 		component: AnswerResult,
 	},
+	{
+        path: '/404',
+		name: '404',
+        component: () => import('@/views/404'),
+    },
+    { path: '*', redirect: '/404' }
 ]
 
 const router = new VueRouter({

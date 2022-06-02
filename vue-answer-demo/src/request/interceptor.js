@@ -9,20 +9,22 @@ const service = axios.create({
 
 // 请求拦截
 service.interceptors.request.use(
-	(config) => {
+	config => {
+		// 添加请求头部信息
+		// config.headers.token = 'token'
 		return config
 	},
-	(error) => {
+	error => {
 		return Promise.reject(error)
 	}
 )
 
 // 响应拦截
 service.interceptors.response.use(
-	(res) => {
+	res => {
 		return res.data
 	},
-	(error) => {
+	error => {
 		return Promise.reject(error)
 	}
 )

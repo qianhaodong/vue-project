@@ -35,14 +35,10 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import BaseLayout from '@/components/BaseLayout'
-import { getQuestionList } from '@/api'
+import { getQuestionList } from '@/apis/answer'
 
 export default {
 	name: 'Answer',
-	components: {
-		BaseLayout,
-	},
 	data() {
 		return {
 			answerIndexList: ['A', 'B', 'C', 'D'],

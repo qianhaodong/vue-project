@@ -11,13 +11,8 @@
 </template>
 
 <script>
-import BaseLayout from '@/components/BaseLayout'
-
 export default {
 	name: 'HomePage',
-	components: {
-		BaseLayout,
-	},
 	data() {
 		return {
 			tips: '第一周',
