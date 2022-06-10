@@ -12,6 +12,7 @@ import '@/components'
 
 // 加载样式
 import './assets/styles/reset.less'
+import './assets/styles/variables.less'
 
 // 加载 Js 文件
 import '@/utils/permission'

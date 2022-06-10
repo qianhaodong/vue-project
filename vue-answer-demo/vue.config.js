@@ -32,6 +32,11 @@ module.exports = {
                         propList: ['*']
                     })
                 ]
+            },
+            less: {
+                globalVars: {
+                    hack: `true; @import "~@/assets/styles/variables.less";`
+                }
             }
         }
     },
