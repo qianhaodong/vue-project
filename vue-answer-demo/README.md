@@ -23,7 +23,7 @@ npm run build
 
 **移动端扫描下方二维码：**
 
-![code](.\public\code.png)
+![code](./public/code.png)
 
 ## 三、项目说明
 
